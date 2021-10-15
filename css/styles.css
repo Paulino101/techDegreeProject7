@@ -19,10 +19,25 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #a891ce;
+  color: white;
+  padding: 1rem 0.5rem;
 }
 
 header > h1 {
-  width: 10%;
+  font-size: x-large;
+  font-weight: 100;
+}
+
+header > h2 {
+  font-size: large;
+  font-weight: 100;
 }
 
 header > img {
@@ -49,5 +64,201 @@ main {
 
 .bell-icon-svg {
   width: 10%;
+  fill: white;
+}
+
+nav {
+  background-color: #3c0080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 1rem;
+}
+
+a > svg {
+  fill: white;
+  width: 50%;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headline {
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+}
+
+.main-search {
+  height: 3rem;
+  border-left: grey 1px solid;
+  border-bottom: grey 1px solid;
+  border-top: none;
+  border-right: none;
+  background: whitesmoke;
+}
+
+h3 {
+  font-size: large;
+  text-transform: uppercase;
+}
+
+.traffic-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0;
+  list-style-type: none;
+}
+
+.facebook-image,
+.instagram-image,
+.twitter-image {
+  width: 25%;
+  padding: 0 1rem;
+}
+
+.social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: whitesmoke;
+  margin: 1rem 0.5rem;
+  border: 1px grey solid;
+  border-radius: 3%;
+  padding: 1rem;
+}
+
+.social-name {
+  color: #a891ce;
+  font-size: larger;
+}
+
+.social-count {
+  color: #494949;
+  font-size: xxx-large;
+}
+
+.members-container,
+.activity-container {
+  margin: 2rem;
+  border-bottom: grey 1px solid;
+}
+
+.members-container > p,
+.activity-container > p {
+  margin-bottom: 1rem;
+}
+
+.members > div,
+.recent > div {
+  text-align: center;
+}
+
+.members-container > .profile-image,
+.activity-container > .profile-image {
+  width: 40%;
+}
+
+.message > h3 {
+  margin-bottom: 0.75rem;
+}
+
+.widget-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: #b4b4b4 1px solid;
+}
+
+.form-field,
+.form-area,
+.button-primary {
+  width: 80%;
+  margin: 0.25rem;
+  border: #b4b4b4 1px solid;
+  border-radius: 4%;
+  background-color: whitesmoke;
+}
+
+.form-field,
+.button-primary {
+  height: 2rem;
+}
+
+.form-area {
+  height: 5rem;
+}
+
+.button-primary {
+  color: white;
+  background-color: #a891ce;
+  margin-bottom: 1rem;
+}
+
+.switch-light,
+.switch-material {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+.settings-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.settings-button > button {
+  width: 45vw;
+  height: 45px;
+  margin: 0.5rem;
+  color: white;
+}
+
+#cancel {
+  background-color: #757575;
+  border: none;
+  border-radius: 4%;
 }
 /*# sourceMappingURL=styles.css.map */
