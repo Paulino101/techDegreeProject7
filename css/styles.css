@@ -132,16 +132,23 @@ h3 {
   list-style-type: none;
 }
 
-.facebook-image,
-.instagram-image,
-.twitter-image {
+.facebook-image > svg,
+.instagram-image > svg,
+.twitter-image > svg {
   width: 25%;
   padding: 0 1rem;
   fill: white;
+  height: 6rem;
+  width: 4rem;
 }
 
-svg > circle {
-  color: purple;
+.facebook-image,
+.instagram-image,
+.twitter-image {
+  background: #a891ce;
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
 }
 
 .social-container {
