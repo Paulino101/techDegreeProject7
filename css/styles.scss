@@ -111,9 +111,7 @@ h3 {
   height: 6rem;
   width: 6rem;
 }
-// svg > circle {
-//   color: purple;
-// }
+
 .social-container {
   display: flex;
   background-color: whitesmoke;
@@ -214,7 +212,47 @@ h3 {
 // Tablet Media Queries //
 //////////////////////////
 @media (min-width: 768px) {
+  /////////////
+  ///Header///
+  ////////////
+  .tablet-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tablet-container > img {
+    width: 25%;
+  }
+  .bell-icon-svg > svg {
+    width: 3rem;
+  }
+  //////////
+  ///nav///
+  /////////
+  .grid-container {
+    grid-template-columns: 60px 1fr;
+    grid-template-areas:
+      "header header"
+      "nav main";
+  }
+  nav {
+    flex-direction: column;
+    align-content: center;
+  }
+  a > svg {
+    width: 125%;
+  }
+  //////////
+  ///main///
+  //////////
+  .main-search {
+    width: 75vw;
+  }
 }
+
 // // Desktop Media Queries //
 
 // @media (min-width: 1024) {
