@@ -375,10 +375,23 @@ h3 {
   a > svg {
     width: 125%;
   }
+  .daily,
+  .mobile {
+    margin-top: 0;
+    border-bottom: 0;
+  }
+  .daily > h3,
+  .mobile > h3 {
+    padding-top: 1rem;
+  }
   .tablet-daily-mobile-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    border-bottom: grey 1px solid;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .daily {
     border-right: grey 1px solid;
@@ -481,6 +494,48 @@ h3 {
   }
   label > span {
     margin-left: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .social-container {
+    width: 25vw;
+  }
+  .facebook-image,
+  .instagram-image,
+  .twitter-image {
+    height: 4rem;
+    width: 4rem;
+  }
+  .facebook-image > svg,
+  .instagram-image > svg,
+  .twitter-image > svg {
+    height: 4rem;
+    width: 2.1rem;
+  }
+  .desktop-grid-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .activity-container {
+    margin: 23px;
+    margin-left: 0%;
+  }
+  .message,
+  .settings {
+    width: 480px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -283,8 +283,19 @@ h3 {
   //////////
   ///main///
   //////////
+  .daily,
+  .mobile {
+    margin-top: 0;
+    border-bottom: 0;
+  }
+  .daily > h3,
+  .mobile > h3 {
+    padding-top: 1rem;
+  }
   .tablet-daily-mobile-container {
     display: flex;
+    border-bottom: grey 1px solid;
+    justify-content: space-evenly;
   }
   .daily {
     border-right: grey 1px solid;
@@ -353,32 +364,38 @@ h3 {
     margin-left: 1rem;
   }
 }
-
-// // Desktop Media Queries //
-
-// @media (min-width: 1024) {
-//   .grid-container {
-//     grid-template-columns: 55px 1fr;
-//     grid-template-areas:
-//       "header header"
-//       "nav main";
-//   }
-//   main {
-//     display: grid;
-//     grid-template-columns: 1fr;
-//   }
-//   .traffic,
-//   .social {
-//     grid-column: 1 / span 2;
-//   }
-//   .daily,
-//   .members,
-//   .message {
-//     grid-column: 1 / span 1;
-//   }
-//   .mobile,
-//   .recent,
-//   .settings {
-//     grid-column: 2 / span 1;
-//   }
-// }
+////////////////////////////
+// Desktop Media Queries //
+///////////////////////////
+@media (min-width: 1024px) {
+  .social-container {
+    width: 25vw;
+  }
+  .facebook-image,
+  .instagram-image,
+  .twitter-image {
+    height: 4rem;
+    width: 4rem;
+  }
+  .facebook-image > svg,
+  .instagram-image > svg,
+  .twitter-image > svg {
+    height: 4rem;
+    width: 2.1rem;
+  }
+  .desktop-grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+  }
+  .activity-container {
+    margin: 23px;
+    margin-left: 0%;
+  }
+  .message,
+  .settings {
+    width: 480px;
+  }
+}
