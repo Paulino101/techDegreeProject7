@@ -533,9 +533,35 @@ h3 {
     margin: 23px;
     margin-left: 0%;
   }
+  .members,
+  .recent,
   .message,
   .settings {
-    width: 480px;
+    width: 50%;
+  }
+  .recent {
+    border-left: grey 1px solid;
+    width: 49%;
+  }
+  .settings {
+    border-left: grey 1px solid;
+    width: 49%;
+    margin-top: 0;
+  }
+  .members,
+  .recent {
+    border-bottom: grey 1px solid;
+  }
+  .last-activity,
+  .last-member {
+    border: 0;
+  }
+  .tablet-daily-mobile-container {
+    width: 100%;
+  }
+  .daily,
+  .mobile {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
