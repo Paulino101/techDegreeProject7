@@ -96,6 +96,10 @@ a > svg {
   width: 50%;
 }
 
+.bar-chart {
+  width: 90%;
+}
+
 #alert {
   height: 4vh;
 }
