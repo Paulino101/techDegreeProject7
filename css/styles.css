@@ -285,6 +285,10 @@ h3 {
   width: 20%;
 }
 
+.message {
+  width: 94%;
+}
+
 .message > h3 {
   margin-bottom: 0.75rem;
 }
