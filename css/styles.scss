@@ -11,6 +11,9 @@
     "nav"
     "main";
 }
+canvas {
+  max-width: 100%;
+}
 //////////
 //HEADER//
 //////////
@@ -22,11 +25,14 @@ header {
   background-color: #7477bf;
   color: white;
   padding: 1rem 0.5rem;
-  width: 105%;
+  width: 95%;
 }
 header > h1 {
   font-size: x-large;
   font-weight: 100;
+}
+h2 {
+  width: 100%;
 }
 .tablet-container > h2 {
   margin-left: 0.5rem;
@@ -38,12 +44,12 @@ header > img {
 }
 nav {
   grid-area: nav;
-  width: 100%;
+  width: 90%;
 }
 main {
   grid-area: main;
   display: grid;
-  width: 110%;
+  width: 100%;
 }
 .tablet-container {
   display: flex;
@@ -76,17 +82,18 @@ a > svg {
 //main//
 ////////
 .traffic-chart {
-  width: 92%;
+  width: 100%;
 }
 .bar-chart {
   width: 90%;
 }
 .widget-container-half {
-  width: 90%;
+  width: 100%;
 }
 .doughnut-chart {
 }
 #alert {
+  width: 100%;
   height: 4vh;
 }
 .alert {
@@ -115,12 +122,18 @@ a > svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 320px;
+}
+.main-header-search {
+  width: 100%;
 }
 .headline {
   padding: 0.5rem 0.5rem 1rem 0.5rem;
+  width: 32%;
+  margin-right: 0.5rem;
 }
 .main-search {
-  min-width: 70vw;
+  width: 100%;
   height: 3rem;
   border-left: grey 1px solid;
   border-bottom: grey 1px solid;
@@ -132,8 +145,10 @@ h3 {
   font-size: large;
   text-transform: uppercase;
 }
+
 .traffic {
   border-bottom: grey 1px solid;
+  width: 100%;
 }
 .traffic-nav {
   display: flex;
@@ -142,6 +157,12 @@ h3 {
   justify-content: space-evenly;
   padding: 0;
   list-style-type: none;
+}
+.tablet-daily-mobile-container {
+  width: 100%;
+}
+.desktop-grid-container {
+  width: 100%;
 }
 .facebook-image > svg,
 .instagram-image > svg,
@@ -178,6 +199,9 @@ h3 {
 }
 .members-text > a {
   color: #7477bf;
+}
+.social {
+  width: 100%;
 }
 .social-count {
   color: rgb(73, 73, 73);
@@ -290,6 +314,8 @@ h3 {
   color: white;
   border-radius: 5%;
   width: 100%;
+  height: 2rem;
+  align-items: center;
 }
 .alert-banner > p {
   margin-right: 1rem;
@@ -301,6 +327,9 @@ h3 {
   /////////////
   ///Header///
   ////////////
+  header {
+    width: 92%;
+  }
   .tablet-container {
     display: flex;
     flex-direction: row;
@@ -334,6 +363,13 @@ h3 {
   //////////
   ///main///
   //////////
+  main {
+    margin-left: 2rem;
+    width: 90%;
+  }
+  #alert {
+    width: 94%;
+  }
   .daily,
   .mobile {
     margin-top: 0;
@@ -347,13 +383,17 @@ h3 {
     display: flex;
     border-bottom: grey 1px solid;
     justify-content: space-evenly;
+    width: 94%;
   }
   .daily {
     border-right: grey 1px solid;
   }
 
   .main-search {
-    width: 75vw;
+    width: 285%;
+  }
+  .traffic {
+    width: 93%;
   }
   .traffic-nav {
     justify-content: flex-end;
@@ -361,14 +401,36 @@ h3 {
   .traffic-nav-link {
     margin: 0.5rem;
   }
+  .social {
+    width: 94%;
+  }
   .social-flex {
     display: flex;
   }
   .social-container {
-    width: 12rem;
+    width: 27%;
+    margin: 1rem 0.25rem;
   }
   .social-count {
     font-size: 2.5rem;
+  }
+  .facebook-image,
+  .instagram-image,
+  .twitter-image {
+    height: 4rem;
+    width: 4rem;
+  }
+  .facebook-image > svg,
+  .instagram-image > svg,
+  .twitter-image > svg {
+    height: 4rem;
+    width: 2rem;
+  }
+  .social-text {
+    width: 65%;
+  }
+  .members {
+    width: 98%;
   }
   .members-container {
     display: flex;
@@ -378,6 +440,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
     border-bottom: none;
+    margin: 0;
   }
   .members-container > .profile-image,
   .activity-container > .profile-image {
@@ -414,13 +477,45 @@ h3 {
   label > span {
     margin-left: 1rem;
   }
+  .desktop-grid-container {
+    width: 94%;
+  }
+  .message {
+    width: 100%;
+  }
+  .widget-container {
+    align-content: flex-start;
+  }
+  .form-field,
+  .form-area,
+  .button-primary {
+    width: 97%;
+  }
 }
 ////////////////////////////
 // Desktop Media Queries //
 ///////////////////////////
 @media (min-width: 1024px) {
+  header {
+    width: 1008px;
+  }
+  main {
+    width: 933px;
+  }
+  .main-search {
+    width: 415%;
+  }
+  #alert {
+    width: 97%;
+  }
+  #traffic {
+    width: 97%;
+  }
+  .social {
+    width: 97%;
+  }
   .social-container {
-    width: 25vw;
+    width: 26vw;
   }
   .facebook-image,
   .instagram-image,
@@ -440,6 +535,7 @@ h3 {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
+    width: 97%;
   }
   .activity-container {
     margin: 23px;
@@ -469,7 +565,7 @@ h3 {
     border: 0;
   }
   .tablet-daily-mobile-container {
-    width: 100%;
+    width: 97%;
   }
   .daily,
   .mobile {
